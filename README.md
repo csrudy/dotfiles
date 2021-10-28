@@ -10,7 +10,7 @@ _Note_: Root necessary for some of the install script, so pay attention for pass
 
 ```sh
 # Install Homebrew
-git clone git@github.com:jadengore/dotfiles.git $HOME/.dotfiles
+git clone git@github.com:csrudy/dotfiles.git $HOME/.dotfiles
 cd $HOME/.dotfiles
 bash install.sh
 ```
