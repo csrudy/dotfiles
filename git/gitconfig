@@ -1,6 +1,6 @@
 [user]
-        name = Edward Bramanti
-        email = edward@bramanti.org
+        name = Parker Allen
+	email = parkerjallen1@gmail.com
 [filter "media"]
         clean = git media clean %f
         smudge = git media smudge %f
@@ -37,7 +37,5 @@
 [url "git@github.com:"]
         pushInsteadOf = "https://www.github.com/"
 
-[includeIf "gitdir:~/Dev/"]
-        path = ~/Dev/.gitconfig
 [init]
 	defaultBranch = master
