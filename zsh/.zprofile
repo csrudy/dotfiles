@@ -4,3 +4,4 @@
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="/Users/edward/.local/share/solana/install/active_release/bin:$PATH"
+eval "$(/opt/homebrew/bin/brew shellenv)"
