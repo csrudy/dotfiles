@@ -54,7 +54,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-source /Users/park/.docker/init-zsh.sh || true # Added by Docker Desktop
 
 # bun completions
 [ -s "/Users/park/.bun/_bun" ] && source "/Users/park/.bun/_bun"
@@ -62,3 +61,9 @@ source /Users/park/.docker/init-zsh.sh || true # Added by Docker Desktop
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/parkerallen/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
