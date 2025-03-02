@@ -46,3 +46,19 @@ export CARGO_ROOT="$HOME/.cargo"
 export PATH="$CARGO_ROOT/bin:$PATH"
 
 include "$HOME/local.zsh"
+
+# pnpm
+export PNPM_HOME="/Users/park/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+source /Users/park/.docker/init-zsh.sh || true # Added by Docker Desktop
+
+# bun completions
+[ -s "/Users/park/.bun/_bun" ] && source "/Users/park/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
